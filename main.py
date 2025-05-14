@@ -5,7 +5,13 @@ from src.rectangulo import Rectangulo
 
 def calcular_areas(lista_figuras):
     area_total = 0
+    rectangulos = 0
+    cuadrados = 0
     for figura in lista_figuras:
+        if isinstance(figura, Rectangulo):
+            rectangulos += 1
+        elif isinstance(figura, Cuadrado):
+            cuadrados += 1
         print(figura)
         print(f'Area: {figura.area()}')
         print(f'Perimetro: {figura.perimetro()}')
@@ -14,6 +20,8 @@ def calcular_areas(lista_figuras):
     print('*'.center(50, '*'))
     print('*'.center(50, '*'))
     print(f'Total area: {area_total}')
+    print(f'Total Cuadrados: {cuadrados}')
+    print(f'Total Rectangulos: {rectangulos}')
 
 
 c1 = Cuadrado(lado=3)
