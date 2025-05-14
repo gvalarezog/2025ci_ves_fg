@@ -10,7 +10,6 @@ def calcular_areas(lista_figuras):
         print('*'.center(50, '*'))
 
 
-
 c1 = Cuadrado(lado=3)
 c2 = Cuadrado(lado=4)
 c3 = Cuadrado(lado=9)
