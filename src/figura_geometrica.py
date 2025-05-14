@@ -22,6 +22,12 @@ class FiguraGeometrica:
     def ancho(self, nuevo_ancho):
         self._ancho = nuevo_ancho
 
+    def area(self):
+        return self.alto * self.ancho
+
+    def perimetro(self):
+        return 2*(self.alto + self.ancho)
+
 if __name__ == '__main__':
     figura = FiguraGeometrica(alto=5, ancho=10)
     print(figura)

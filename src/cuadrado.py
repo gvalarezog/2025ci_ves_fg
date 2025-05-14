@@ -1,6 +1,5 @@
 from src.figura_geometrica import FiguraGeometrica
 
-
 class Cuadrado(FiguraGeometrica):
     def __init__(self, lado=0):
         FiguraGeometrica.__init__(self, ancho=lado, alto=lado)
@@ -11,3 +10,5 @@ class Cuadrado(FiguraGeometrica):
 if __name__ == '__main__':
     c1 = Cuadrado(lado=6)
     print(c1)
+    print(f'Area: {c1.area()}')
+    print(f'Perimetro: {c1.perimetro()}')
