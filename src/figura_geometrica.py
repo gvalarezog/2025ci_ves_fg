@@ -1,5 +1,15 @@
+#integrante:
+#1
 class FiguraGeometrica:
+    '''
+    Classe que representa una figura geometrica
+    '''
     def __init__(self, alto=0, ancho=0):
+        '''
+
+        :param alto:
+        :param ancho:
+        '''
         self._alto = alto
         self._ancho = ancho
 

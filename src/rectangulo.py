@@ -1,3 +1,6 @@
+#integrates
+#
+
 from src.figura_geometrica import FiguraGeometrica
 
 class Rectangulo(FiguraGeometrica):
